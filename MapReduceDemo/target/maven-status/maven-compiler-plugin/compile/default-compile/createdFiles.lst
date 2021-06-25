@@ -1,0 +1,3 @@
+com\tianang\mapreduce\wordcount\WordCountDriver.class
+com\tianang\mapreduce\wordcount\WordCountMapper.class
+com\tianang\mapreduce\wordcount\WordCountReducer.class
