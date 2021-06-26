@@ -55,7 +55,7 @@ public class HDFSClient {
          * usage: copy the file from HDFS to local
          * arguments:
          * 1. whether delete the source file or not
-         * 2. the HDFS source path from HDFS
+         * 2. the HDFS source path
          * 3. the local destination path
          * 4. whether check the integrity of the file
          */
@@ -79,7 +79,9 @@ public class HDFSClient {
     public void testDelete() throws IOException {
         /*
          * usage: delete the directory
-         * argument: the path name of the directory need to be deleted
+         * arguments:
+         * 1. the path name
+         * 2. whether list all files recursively
          */
         fs.delete(new Path("/DeathBoyAndBlackMaid"), true);
     }
