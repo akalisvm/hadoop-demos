@@ -15,8 +15,8 @@ public class WordCountDriver {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
 
         // 1. Getting configuration and jar object.
-        Configuration configuration = new Configuration();
-        Job job = Job.getInstance(configuration);
+        Configuration conf = new Configuration();
+        Job job = Job.getInstance(conf);
 
         // 2. Setting up jar object.
         job.setJarByClass(WordCountDriver.class);

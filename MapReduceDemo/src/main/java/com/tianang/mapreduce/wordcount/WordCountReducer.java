@@ -12,7 +12,7 @@ public class WordCountReducer extends Reducer<Text, IntWritable, Text, IntWritab
     IntWritable outValue = new IntWritable();
 
     @Override
-    protected void reduce(Text outKey, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
+    protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
 
         // 1. Accumulation
         sum = 0;
@@ -23,6 +23,6 @@ public class WordCountReducer extends Reducer<Text, IntWritable, Text, IntWritab
 
         // 2. Output
         outValue.set(sum);
-        context.write(outKey, outValue);
+        context.write(key, outValue);
     }
 }

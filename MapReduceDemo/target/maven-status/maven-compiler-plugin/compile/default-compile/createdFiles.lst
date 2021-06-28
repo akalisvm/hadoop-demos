@@ -1,3 +1,6 @@
-com\tianang\mapreduce\wordcount\WordCountDriver.class
-com\tianang\mapreduce\wordcount\WordCountMapper.class
 com\tianang\mapreduce\wordcount\WordCountReducer.class
+com\tianang\mapreduce\wordcount\WordCountMapper.class
+com\tianang\mapreduce\outputformat\LogArgsList$1.class
+com\tianang\mapreduce\outputformat\LogArgsList.class
+com\tianang\mapreduce\outputformat\LogArgsList$InnerClassSingleton.class
+com\tianang\mapreduce\wordcount\WordCountDriver.class
