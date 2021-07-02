@@ -31,7 +31,7 @@ public class LogDriver {
         job.setOutputFormatClass(LogOutputFormat.class);
 
         FileInputFormat.setInputPaths(job, new Path(args[0]));
-        // Although there is a tailored output format, it extends fileoutputformat.
+        // Although there is a tailored output format, which extends fileoutputformat.
         // And fileoutputformat outputs a _SUCCESS file, thus we still need an output path.
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
